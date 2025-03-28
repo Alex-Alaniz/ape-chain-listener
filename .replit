@@ -5,7 +5,7 @@ run = "npm start"
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "npm run start:pm2"]
+run = ["sh", "-c", "node server.js"]
 build = ["sh", "-c", "npm install"]
 
 [workflows]
@@ -18,4 +18,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run start:pm2"
+args = "node server.js"

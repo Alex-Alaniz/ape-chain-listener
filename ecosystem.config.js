@@ -1,5 +1,5 @@
 
-export default {
+module.exports = {
   apps: [{
     name: "blockchain-listener",
     script: "server.js",
