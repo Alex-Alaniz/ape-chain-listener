@@ -6,6 +6,7 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "npm run start:pm2"]
+build = ["sh", "-c", "npm install"]
 
 [workflows]
 runButton = "Run"
